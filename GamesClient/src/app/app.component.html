@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <td style="padding: 10px" *ngFor="let game of modelGames">
+      <div style=" text-align: center"><b>[{{game.ID}}] {{game.Name}}</b></div>
+      <img src="/assets/images/{{game.ImgPath}}" height="220" />
+      <div style=" text-align: center">
+        <h4><b>
+            <font color="red">{{game.Price | currency:'€'}}</font>
+          </b></h4>
+      </div>
+    </td>
+  </tr>
+</table>
